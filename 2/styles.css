@@ -1,0 +1,146 @@
+:root {
+    --background-color: #E3F0E6;
+    --text-color: #04A96D;
+    --header-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    --text-box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    
+    position: sticky;
+    top: 0;
+
+    padding: 20px 20px;
+    height: 50px;
+    width: 100%;
+    box-shadow: var(--header-shadow);
+    background-color: var(--background-color);
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.ul-navbar {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    list-style-type: none;
+
+    margin: 0;
+}
+
+li, a {
+    text-decoration: none;
+}
+
+a {
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+h1 {
+    margin: 0;
+    color: var(--text-color)
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.big-text-box {
+    height: 200px;
+    overflow: scroll;
+    box-shadow: var(--text-box-shadow);
+    padding: 10px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+}
+
+figcaption {
+    text-align: right;
+}
+
+.lists-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.single-list-container {
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px 10px 10px 30px;
+    width: fit-content;
+    gap: 10px;
+    border: solid 1px var(--text-color);
+    border-radius: 10px;
+
+    ol, ul {
+        padding: 0;
+    }
+}
+
+form {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.form-containers {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px 0;
+    width: 300px;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 10px 30px;
+    border: solid 1px var(--text-color);
+    border-radius: 10px;
+    width: 400px;
+}
+
+tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    padding: 20px 0;
+    text-align: center;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
