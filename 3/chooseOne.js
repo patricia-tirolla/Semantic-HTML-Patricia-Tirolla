@@ -1,4 +1,3 @@
-const inputs = document.getElementsByTagName("input");
 
 Array.from(labels).forEach(label => {
     let forAttributeValue = label.getAttribute("for");
@@ -16,18 +15,6 @@ Array.from(inputs).forEach(input => {
     }
 })
 
-// const body = document.getElementsByTagName("body")
-// Array.from(document.body.querySelectorAll("*")).forEach(element => {
-//     let idAttributeValue = element.getAttribute("id");
-//     let forAttributeValue = element.getAttribute("for")
-//     if (idAttributeValue && idAttributeValue.includes("radio") &&
-//         forAttributeValue && forAttributeValue.includes("radio")) {
-//         element.className = idAttributeValue;
-//     }
-// })
-
-
-// now I need to manipulate from the classnames
 const chooseOne = document.getElementById("choose-one");
 const radioItems = document.getElementsByClassName("radio-items");
 
