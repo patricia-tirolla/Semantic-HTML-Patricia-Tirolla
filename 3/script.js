@@ -1,11 +1,13 @@
 // ----------------  styling form container
 const myForm = document.getElementById("form");
-myForm.style.display = "flex";
-myForm.style.flexDirection = "column";
-myForm.style.width = "300px";
-myForm.style.gap = "20px";
-myForm.style.padding = "20px";
-myForm.style.border = "solid 2px green";
+with (myForm.style) {
+    display = "flex";
+    flexDirection = "column";
+    width = "300px";
+    gap = "20px";
+    padding = "20px";
+    border = "solid 2px green";
+}
 
 // ---------------- selecting inputs and labels
 const inputs = document.getElementsByTagName("input");

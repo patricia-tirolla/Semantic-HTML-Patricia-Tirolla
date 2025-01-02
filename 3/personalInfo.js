@@ -28,5 +28,7 @@ wrappingDiv.appendChild(textArea);
 myForm.prepend(wrappingDiv);
 
 // ----------------  styling the wrapping div
-wrappingDiv.style.display = "flex";
-wrappingDiv.style.flexDirection = "column";
+with (wrappingDiv.style) {
+    display = "flex";
+    flexDirection = "column";
+}

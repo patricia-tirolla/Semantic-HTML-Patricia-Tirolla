@@ -1,4 +1,3 @@
-
 Array.from(labels).forEach(label => {
     let forAttributeValue = label.getAttribute("for");
     if (forAttributeValue && forAttributeValue.includes("radio")) {
